@@ -82,3 +82,29 @@ Durante a conversa, você pode digitar estes comandos diretamente no campo de te
 
 ## 🎮 Exemplo de Interação
 
+
+Ao iniciar o assistente no terminal, a interface gerencia o histórico de forma limpa e responde mantendo o contexto das mensagens anteriores:
+
+```text
+\$ python diogo.py llama3.2
+
+[Sistema] Carregando modelo 'llama3.2'...
+[Sistema] Assistente iniciado com sucesso!
+[Sistema] Digite /clear para limpar o histórico ou /exit para sair.
+
+Você: Olá, meu nome é Diogo e sou desenvolvedor Python.
+IA: Olá, Diogo! É um prazer conversar com você. Como desenvolvedor Python, no que posso te ajudar hoje? Deseja debugar algum código ou estruturar um novo projeto?
+
+Você: Qual é o meu nome e o que eu faço?
+IA: Seu nome é Diogo e você é um desenvolvedor Python!
+
+Você: /clear
+[Sistema] Histórico de conversa limpo com sucesso!
+
+Você: Qual é o meu nome?
+IA: Peço desculpas, mas como o histórico foi limpo, eu não sei o seu nome. Como posso ajudar você agora?
+
+Você: /exit
+[Sistema] Encerrando o assistente offline de forma segura. Até mais!
+```
+
